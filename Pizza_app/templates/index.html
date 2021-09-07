@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:;base64,=">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+    <div id="wrapper">
+        <h1 id="logo">Pizza app</h1>
+        <p id="intro">Use this app to create the dough & sauce for your pizza</p>
+        <button id="doughmixing">Dough preparing</button>
+        <button id="pizzasauce">Pizza sauce</button>
+        <button id="language" onclick="languageSwitch()">Suomi</button>
+        <button id="doughmixingMobile">Dough preparing</button>
+        <button id="pizzasauceMobile">Pizza sauce</button>
+        <div id="container">
+            <div id="mixingContainer">
+                <p>Lorem Ipsum Dough</p>
+            </div>
+            <div id="mixingContainerSauce">
+                <p>Lorem Ipsum Sauce</p>
+            </div>
+            <div id="selectionContainer">
+                <div id="radiobuttons">
+                    <label id="pizzastyle" for="radiobutton">Pizza style:</label>
+                    <label id="labelnapoletana" class="radiobutton">Napoletana
+                        <input type="radio" name="pizzastyle" value="Napoletana" onclick="napoletanaCheck()">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radiobutton">New York
+                        <input type="radio" name="pizzastyle" value="New-York" onclick="newyorkCheck()">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div id="dropdown" onchange="dropDownLauncher()">
+                    <label for="cars">Pizza style:</label>
+                    <br>
+                    <select name="pizza" id="pizzadropdown">
+                        <option value="">Choose Pizza style</option>
+                        <option value="Napoletana">Napoletana</option>
+                        <option value="New-York">New York</option>
+                    </select>
+                </div>
+                <br>
+                <label id="numberofpizzas2" for="numberofpizzas"># of pizzas:</label>
+                <input type="number" id="numberofpizzas" name="numberofpizzas" min="1" max="99">
+                <br><br>
+                <button id="ingredientsButton" onclick="showIngredients()">Show Ingredients</button>
+                <button id="ingredientsButtonSauce" onclick="sauceIngredients()">Show Ingredients</button>
+            </div>
+            <hr id="middleline">
+            <div id="instructionsContainer">
+                <p>1. Lorem ipsum dolor sit amet Dough</p>
+                <p>2. consectetur adipiscing elit</p>
+                <p>3. Fusce libero diam</p>
+                <p>4. molestie vitae gravida a</p>
+                <p>5. ultrices ut ipsum</p>
+                <p>6. Phasellus erat elit</p>
+            </div>
+            <div id="requiredcontainer">
+                <p id="requiredingredients">Required ingredients:</p>
+                <label for="flourneeded" id="flourneed">Flour:</label>
+                <span class="flourneeded"></span>
+                <br><br>
+                <label for="waterneeded" id="waterneed">Water:</label>
+                <span class="waterneeded"></span>
+                <br><br>
+                <label for="yeastneeded" id="yeastneed">Yeast:</label>
+                <span class="yeastneeded"></span>
+                <br><br>
+                <label for="saltneeded" id="saltneed">Salt:</label>
+                <span class="saltneeded"></span>
+                <br><br>
+                <label for="oilneeded" id="oilneed">Olive oil:</label>
+                <span class="oilneeded"></span>
+                <br><br>
+                <label for="sugarneeded" id="sugarneed">Sugar:</label>
+                <span class="sugarneeded" id="sugarneed2"></span>
+            </div>
+            <div id="instructionsContainerSauce">
+                <p>1. Lorem ipsum dolor sit amet Sauce</p>
+                <p>2. consectetur adipiscing elit</p>
+                <p>3. Fusce libero diam</p>
+                <p>4. molestie vitae gravida a</p>
+                <p>5. ultrices ut ipsum</p>
+                <p>6. Phasellus erat elit</p>
+            </div>
+            <div id="requiredcontainer2">
+                <p id="requiredingredients2">Required ingredients:</p>
+                <label for="crushedtomatoes" id="tomatoneed">Crushed tomatoes: </label>
+                <span class="crushedtomatoes"></span>
+                <br><br>
+                <label for="tomatopaste" id="paste">Tomato paste: </label>
+                <span class="tomatopaste" id="paste2"></span>
+                <label for="basil" id="bas">Basil: </label>
+                <span class="basil" id="bas2"></span>
+                <br><br>
+                <label for="oliveoil" id="oilneedsauce">Olive oil: </label>
+                <span class="oliveoil"></span>
+                <br><br>
+                <label for="salt" id="saltneedsauce">Salt: </label>
+                <span class="salt"></span>
+                <br><br>
+                <label for="onionpowder" id="onion">Onion powder: </label>
+                <span class="onionpowder" id="onion2"></span>
+                <br><br>
+                <label for="oregano" id="ore">Oregano: </label>
+                <span class="oregano" id="ore2"></span>
+                <br><br><br><br>
+            </div>
+        </div>
+        <div>
+        <footer>
+            <div id="copyright">
+                © 2021 Samir Boudissa
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/help">help</a>
+                    </li>
+                    <li>
+                        <a href="/privacy">privacy</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <script src="js/mechanic.js"></script>
+</div>
+</body>
+</html>

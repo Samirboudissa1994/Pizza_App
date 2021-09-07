@@ -1,0 +1,274 @@
+body {
+font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+#wrapper {
+    margin: auto;
+    max-width: 514.05px;
+}
+
+#container {
+    display:block;
+    border:20px solid #000000;
+    border-color: #b3d9ff;
+    height: 400px;
+    width: auto;
+    border-radius: 20px;
+    padding: 1rem;
+    transition-duration: 500ms;
+    transition-property: border-color;
+}
+
+#mixingContainer {
+  display: none;
+}
+
+#mixingContainerSauce {
+  display: none;
+}
+
+#instructionsContainer {
+  display: none;
+}
+
+#instructionsContainerSauce {
+  display: none;
+}
+
+#numberofpizzas{
+    position: absolute;
+    margin-left: 5px;
+    width:30px;
+}
+
+.radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#requiredcontainer {
+    display: block;
+}
+
+#dropdown {
+  display: none;
+}
+
+#requiredcontainer2 {
+    display: none;
+}
+
+#moisturepercentage{
+    width:30px;
+}
+
+#ingredientsButton{
+    margin-bottom: 0.5rem;
+}
+
+#ingredientsButtonSauce{
+    margin-bottom: 0.5rem;
+    display: none;
+}
+
+#pizzasauce {
+    position: relative;
+    display: inline-block;
+    left: 230px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 5px solid #b3d9ff;
+    border-bottom: none;
+    background: none;
+    height: 30px;
+    width: 19%;
+    transition-duration: 500ms;
+    transition-property: border-color;
+}
+
+#doughmixing {
+    position: relative;
+    display: inline-block;
+    left: 230px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 5px solid #b3d9ff;
+    border-bottom: none;
+    background: none;
+    height: 30px;
+    width: 30%;
+    transition-duration: 500ms;
+    transition-property: border-color;
+}
+
+#language {
+    position: relative;
+    display: inline-block;
+    left: -200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 5px solid #b3d9ff;
+    border-bottom: none;
+    background: none;
+    height: 30px;
+    width: 15%;
+    transition-duration: 500ms;
+    transition-property: border-color;
+}
+
+#language:hover {
+    transition: 0.3s;
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+#pizzasauce:hover {
+    transition: 0.3s;
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+#doughmixing:hover {
+    transition: 0.3s;
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+#pizzadough {
+    display: none;
+    margin-left: 65%;
+    border-radius: 10px;
+    border: 5px solid #66b3ff;
+    transition-duration: 500ms;
+    transition-property: border;
+}
+
+#bas, #bas2 {
+    display: none;
+}
+
+@media only screen and (max-width: 2000px) {
+
+  #pizzasauceMobile, #doughmixingMobile {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  body {
+    border: 1px solid #66b3ff;
+    border-radius: 10px;
+    height: 1000px;
+    padding: 10px;
+  }
+
+  #pizzasauceMobile, #doughmixingMobile {
+    visibility: visible;
+    margin: 0 auto;
+    display: grid;
+  }
+
+  #doughmixingMobile {
+    margin-bottom: 0.5rem;
+  }
+
+
+  hr {
+    display: none;
+  }
+
+  #radiobuttons {
+    display: none;
+  }
+
+  #dropdown {
+    display: inline;
+  }
+
+  #pizzadropdown {
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #pizzasauce {
+    display: none;
+  }
+
+  #middleline {
+    visibility: hidden;
+  }
+
+  #container {
+    border: none;
+  }
+
+  #doughmixing {
+    display: none;
+  }
+
+  #intro {
+    display: none;
+  }
+
+  #logo {
+    text-align: center;
+  }
+
+  #wrapper {
+    width: 100%;
+  }
+
+  #container {
+    margin-left: 25%;
+  }
+}
+
+#middleline {
+    border: 10px solid rgb(179, 217, 255);
+    border-radius: 5px;
+    transition-duration: 500ms;
+    transition-property: border-color;
+}
+
+*,*:focus,*:hover{
+    outline:none;
+}
+
+#copyright {
+  display: inline-block;
+}
+
+footer {
+  font-size: 12px;
+  padding: 10px 0 30px 0;
+  height: 0px;
+}
+
+nav {
+  float: right;
+}
+
+ul {
+  display: block;
+  margin: 0;
+}
+
+a {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+  margin-left: 5px;
+}
+
+#doughmixingMobile {
+  display: none;
+}
+
+#pizzasauceMobile {
+  display: none;
+}
